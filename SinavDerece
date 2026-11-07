@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+import java.util.Scanner;
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Lutfen notunuzu giriniz.");
+        int not = giris.nextInt();
+        if(not<=100 && not > 89){
+            System.out.println("AA aldiniz.");
+        }else if (not<90 && 79 < not){
+                    System.out.println("BA aldiniz.");
+                    }
+        else if (not<80  && not>69) {
+                    System.out.println("BB aldiniz.");
+                    }
+        else if (not<70  && not>59) {
+                    System.out.println("CB aldiniz.");
+                    }
+        else if (not<60  && not>49) {
+                    System.out.println("CC aldiniz.");
+                    }
+        else if (not<50  && not=>0) {
+                    System.out.println("FF aldiniz.");
+                    }
+        else{
+            System.out.println("Gecersiz not girisi.");
+        }
+    }
+}
