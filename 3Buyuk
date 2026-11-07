@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+import java.util.Scanner;
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Lutfen bir sayi giriniz.");
+        int sayi = giris.nextInt();
+        System.out.println("Lutfen ikinci bir sayi daha giriniz.");
+        int sayi2 = giris.nextInt();
+        System.out.println("Lutfen ucuncu bir sayi daha giriniz.");
+        int sayi3 = giris.nextInt();
+        if(sayi>sayi2 && sayi > sayi3){
+            System.out.println("Birinci sayi olan " + sayi + " daha buyuktur.");
+        }else if (sayi<sayi2 && sayi3 < sayi2){
+                    System.out.println("Ikinci sayi olan" + sayi2 + " daha buyuktur.");
+                    }
+        else if (sayi3 > sayi && sayi3 > sayi2) {
+                    System.out.println("Ucuncu sayi olan " + sayi3 + " daha buyuktur.");
+                    }
+        else{
+            System.out.println("Iki ya da daha fazla sayi birbirine esit.");
+        }
+    }
+}
