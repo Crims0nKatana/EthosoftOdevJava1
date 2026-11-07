@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+import java.util.Scanner;
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Lutfen ilk kenari giriniz.");
+        int sayi = giris.nextInt();
+        System.out.println("Lutfen ikinci kenari giriniz.");
+        int sayi2 = giris.nextInt();
+        System.out.println("Lutfen ucuncu kenari giriniz.");
+        int sayi3 = giris.nextInt();
+        if((sayi + sayi2> sayi3) && (sayi + sayi3 > sayi2) && (sayi2 + sayi3 > sayi)){
+            if(sayi==sayi2 && sayi2==sayi3){
+            System.out.println("Eskenar ucgen icin uygundur.");
+            }else if (sayi==sayi2 || sayi2 == sayi3){
+            System.out.println("İkizkenar ucgen icin uygundur.");
+            }else{
+            System.out.println("Cesitkenar ucgen icin uygundur.");
+            }
+        }else{
+                System.out.println("Bu kenarlarla ucgen olmaz.");
+                }
+    }
+}
