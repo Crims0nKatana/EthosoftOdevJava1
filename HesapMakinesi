@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+import java.util.Scanner;
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Lutfen ilk sayiyi giriniz.(Normal bir cıkarma veya bolme islemi yapacaksanız buraya buyuk sayi)");
+        int sayi = giris.nextInt();
+        System.out.println("Lutfen ikinci sayiyi giriniz.(Normal bir cıkarma veya bolme islemi yapacaksanız buraya kucuk sayi)");
+        int sayi2 = giris.nextInt();
+        System.out.println("Lutfen islemi giriniz (+,-,* ya da / olarak).");
+        String islem = giris.next();
+        if(islem.equals("+")){
+            System.out.println(sayi + sayi2);
+        }else if (islem.equals("-")){
+            System.out.println(sayi - sayi2);
+        }else if (islem.equals("*")){
+            System.out.println(sayi * sayi2);
+        }else if (islem.equals("/")){
+            if(sayi == 0 || sayi2 == 0){
+                System.out.println("Sifir girdiginiz icin islem yapilamadi.");
+            }else{
+                System.out.println(sayi / sayi2);
+            }
+        }else{
+            System.out.println("Gecersiz islem.");
+        }
+    }
+}
