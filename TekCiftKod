@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in); 
+        System.out.println("Lutfen bir sayi giriniz.");
+        int sayi = giris.nextInt();
+        if (sayi % 2 == 0) { 
+            System.out.println("Sayiniz cifttir");
+        } else {
+            System.out.println("Sayiniz tektir.");
+        }
+    }
+}
+
